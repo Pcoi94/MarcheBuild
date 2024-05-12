@@ -1,0 +1,53 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import PricingCard from "@components/pricing.astro";
+
+const pricing = [
+  {
+    name: "Non-Premium",
+    price: "Gratuit",
+    popular: false,
+    features: [
+      "Accès a toutes les catégories",
+      "Participe au giveaways basiques",
+    ],
+    button: {
+      text: "Obtenu par défaut.",
+      link: "/premium",
+    },
+  },
+  {
+    name: "Premium",
+    price: "Prix Variable",
+    popular: true,
+    features: [
+      "Accès a toutes les catégories",
+      "Participe au giveaways basiques",
+      "Accès a des produits gratuits",
+      "Accès a des giveaways spéciaux",
+      "15% minimum de moins sur tous les articles",
+    ],
+    button: {
+      text: "Acheter",
+      link: "https://www.roblox.com/games/start?placeId=5897351539",
+    },
+  },
+];
+---
+
+<Layout title="Pricing">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Premium</Fragment>
+      <Fragment slot="desc">
+        Notre premium permet d'économisé minimum 15% sur toutes tes ventes et de bénéficier<br /> de multiples produits gratuits !
+      </Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
+      {pricing.map((item) => <PricingCard plan={item} />)}
+    </div>
+  </Container>
+</Layout>
