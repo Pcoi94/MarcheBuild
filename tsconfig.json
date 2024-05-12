@@ -3,9 +3,6 @@
   "compilerOptions": {
     "baseUrl": "src",
     "strictNullChecks": true,
-    "types": [
-      "astro/client"
-    ],
     "paths": {
       "@lib/*": [
         "lib/*"
