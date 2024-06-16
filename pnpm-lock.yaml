@@ -50,6 +50,9 @@ importers:
       tailwindcss:
         specifier: ^3.3.5
         version: 3.3.5
+      tslib:
+        specifier: ^2.6.3
+        version: 2.6.3
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
@@ -2952,8 +2955,8 @@ packages:
     resolution: {integrity: sha512-NoZ4roiN7LnbKn9QqE1amc9DJfzvZXxF4xDavcOWt1BPkdx+m+0gJuPM+S0vCe7zTJMYUP0R8pO2XMr+Y8oLIg==}
     engines: {node: '>=6'}
 
-  tslib@2.6.2:
-    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
+  tslib@2.6.3:
+    resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
 
   tunnel-agent@0.6.0:
     resolution: {integrity: sha512-McnNiV1l8RYeY8tBgEpuodCC1mLUdbSN+CYBL7kJsJNInOP8UjDDEwdk6Mw60vdLLrr5NHKZhMAOSrR2NZuQ+w==}
@@ -3565,7 +3568,7 @@ snapshots:
 
   '@emnapi/runtime@0.44.0':
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
     optional: true
 
   '@esbuild/aix-ppc64@0.21.1':
@@ -3928,7 +3931,7 @@ snapshots:
   '@nrwl/tao@19.3.0':
     dependencies:
       nx: 19.3.0
-      tslib: 2.6.2
+      tslib: 2.6.3
     transitivePeerDependencies:
       - '@swc-node/register'
       - '@swc/core'
@@ -4143,7 +4146,7 @@ snapshots:
   '@yarnpkg/parsers@3.0.0-rc.46':
     dependencies:
       js-yaml: 3.14.1
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   '@zkochan/js-yaml@0.0.7':
     dependencies:
@@ -5900,7 +5903,7 @@ snapshots:
       tar-stream: 2.2.0
       tmp: 0.2.3
       tsconfig-paths: 4.2.0
-      tslib: 2.6.2
+      tslib: 2.6.3
       yargs: 17.7.2
       yargs-parser: 21.1.1
     optionalDependencies:
@@ -6648,7 +6651,7 @@ snapshots:
       minimist: 1.2.8
       strip-bom: 3.0.0
 
-  tslib@2.6.2: {}
+  tslib@2.6.3: {}
 
   tunnel-agent@0.6.0:
     dependencies:
