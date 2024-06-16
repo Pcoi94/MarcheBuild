@@ -30,8 +30,5 @@
   "devDependencies": {
     "nx": "19.3.0"
   },
-  "optimizeDeps": {
-    "include": ["preact/hooks", "preact/compat", "preact"]
-  },
   "nx": {}
 }
